@@ -1,8 +1,6 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
-  overflow-x: hidden;
-
 }
 
 .container {
@@ -39,10 +37,7 @@ html {
 
 }
 
-.text-box-container {
-  width: 960px;
-  margin: 0 auto;
-}
+
 
 .text-box {
   display: inline-block;
@@ -50,6 +45,7 @@ html {
   color: white;
   width: 20rem;
   margin-top: 9rem;
+  text-transform: uppercase;
 
 }
 
@@ -59,6 +55,7 @@ html {
   margin-top: 2rem;
   margin-bottom: 0.25rem;
   margin-left: 3rem;
+
 }
 
 .text-box h1 {
@@ -80,14 +77,26 @@ nav li a {
 
 }
 
+#menu {
+  display: none;
+}
+
 nav {
   background-color: firebrick;
   margin-bottom: 3rem;
 }
 
+.boop {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+}
+
 .product-grid {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 3rem;
 }
 
 .product {
@@ -109,4 +118,120 @@ nav {
 .product img {
   height: 9rem;
   margin: 2rem;
+}
+
+.area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding-left: 2rem;
+}
+
+.button p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section {
+  display: inline-block;
+  width: 35%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav li {
+    display: none;
+  }
+  #menu {
+    display: inline-block;
+  }
+  .boop {
+    justify-content: center;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .product-grid div {
+    width: 47%;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .product-grid div {
+    width: 90%;
+  }
+
+  
+
+  .banner {
+    height: 15rem;
+  }
+
+  .text-box {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 10rem;
+  }
+
+
+  .text-box h1 {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  .text-box h3 {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .section {
+    width: 90%;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .product-grid {
+    justify-content: center;
+  }
+
+  .area {
+    justify-content: center;
+  }
+
+  .boop {
+    width: 100%;
+    justify-content: center;
+  }
+
 }
